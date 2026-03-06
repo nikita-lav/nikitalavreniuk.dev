@@ -33,6 +33,7 @@ export interface IExperience {
 export interface IProject {
     title: string;
     description: string;
+    keyFeatures?: string;
     role: string;
     techStack: string[];
     thumbnail: string;

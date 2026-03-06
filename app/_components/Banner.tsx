@@ -40,15 +40,12 @@ const Banner = () => {
                 className="container h-[100svh] min-h-[530px] max-md:pb-10 flex justify-between items-center max-md:flex-col"
                 ref={containerRef}
             >
-                <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[900px]">
-                    {/*<p className="banner-intro slide-up-and-fade text-muted-foreground font-mono text-base mb-5">*/}
-                    {/*    Hi, my name is*/}
-                    {/*</p>*/}
+                <div className="max-md:grow max-md:flex flex-col justify-center items-start md:max-w-[700px] lg:max-w-[770px]">
                     <h1 className="banner-title slide-up-and-fade leading-[1.05] text-5xl sm:text-7xl lg:text-[90px] font-anton text-primary">
                         Nikita Lavreniuk.
                     </h1>
-                    <h2 className="banner-subtitle slide-up-and-fade leading-[1.05] text-5xl sm:text-7xl lg:text-[90px] font-anton text-muted-foreground mt-2">
-                      I build SaaS products, analytics dashboards, and AI-powered features — end to end
+                    <h2 className="banner-subtitle slide-up-and-fade leading-[1.1] text-3xl sm:text-5xl lg:text-[52px] font-anton text-muted-foreground mt-4">
+                        I build SaaS products, dashboards, AI features, and integrations.
                     </h2>
                     <p className="banner-description slide-up-and-fade mt-8 text-lg text-muted-foreground max-w-[540px]">
                         Senior full-stack developer. 6+ years shipping for enterprise brands through Valtech and fast-moving startups. I take your idea from architecture to production — and make sure it actually works at scale.

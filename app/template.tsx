@@ -2,10 +2,31 @@
 
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { useLenis } from 'lenis/react';
+import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
 
 gsap.registerPlugin(useGSAP);
 
 export default function Template({ children }: { children: React.ReactNode }) {
+    const lenis = useLenis();
+    const pathname = usePathname();
+
+    // Restore saved scroll position (back navigation) or jump to top (forward navigation)
+    // This runs while the page-transition overlay is still covering the screen,
+    // so the user never sees the scroll jump.
+    useEffect(() => {
+        if (!lenis) return;
+
+        const savedScroll = sessionStorage.getItem(`scroll-${pathname}`);
+        if (savedScroll) {
+            lenis.scrollTo(Number(savedScroll), { immediate: true });
+            sessionStorage.removeItem(`scroll-${pathname}`);
+        } else {
+            lenis.scrollTo(0, { immediate: true });
+        }
+    }, [lenis, pathname]);
+
     useGSAP(() => {
         const tl = gsap.timeline();
 

@@ -52,9 +52,9 @@ const ProjectDetails = ({ project }: Props) => {
                 scrollTrigger: {
                     trigger: '#info',
                     start: 'bottom bottom',
-                    end: 'bottom top',
+                    end: '+=400',
                     pin: true,
-                    pinSpacing: false,
+                    pinSpacing: true,
                     scrub: 0.5,
                 },
             });
@@ -151,13 +151,24 @@ const ProjectDetails = ({ project }: Props) => {
                                     {parse(project.description)}
                                 </div>
                             </div>
+                            {project.keyFeatures && (
+                                <div className="fade-in-later">
+                                    <p className="text-muted-foreground font-anton mb-3">
+                                        Key Features
+                                    </p>
+
+                                    <div className="text-lg markdown-text">
+                                        {parse(project.keyFeatures)}
+                                    </div>
+                                </div>
+                            )}
                             {project.role && (
                                 <div className="fade-in-later">
                                     <p className="text-muted-foreground font-anton mb-3">
                                         My Role
                                     </p>
 
-                                    <div className="text-lg">
+                                    <div className="text-lg space-y-4 markdown-text">
                                         {parse(project.role)}
                                     </div>
                                 </div>

@@ -26,6 +26,14 @@ const TransitionLink = ({
         async (e: React.MouseEvent<HTMLAnchorElement>) => {
             e.preventDefault();
 
+            // Save current scroll position so it can be restored on back navigation
+            if (!back) {
+                sessionStorage.setItem(
+                    `scroll-${window.location.pathname}`,
+                    String(window.scrollY),
+                );
+            }
+
             gsap.set('.page-transition', { yPercent: 100 });
             gsap.set('.page-transition--inner', { yPercent: 100 });
 

@@ -59,10 +59,10 @@ const renderEntries: RenderEntry[] = (() => {
 
 const DescriptionContent = ({ item }: { item: FlatItem }) => (
     <>
-        <p className="text-xl font-semibold text-foreground mb-1">
+        <p className="text-3xl font-semibold text-foreground mb-1">
             {item.jobTitle ?? item.label}
         </p>
-        <p className="text-base text-primary mb-4">
+        <p className="text-lg text-primary mb-4">
             {item.parentCompany
                 ? `${item.parentCompany} · ${item.label}`
                 : item.label}
@@ -72,7 +72,7 @@ const DescriptionContent = ({ item }: { item: FlatItem }) => (
             {item.description.map((point, i) => (
                 <li
                     key={i}
-                    className="text-muted-foreground text-sm flex gap-2 items-center"
+                    className="text-muted-foreground text-base flex gap-2 items-center"
                 >
                     <span className="text-primary shrink-0">—</span>
                     <span>{point}</span>
@@ -83,7 +83,7 @@ const DescriptionContent = ({ item }: { item: FlatItem }) => (
             {item.techStack.map((tech) => (
                 <span
                     key={tech}
-                    className="text-xs px-2.5 py-1 rounded-full border border-border text-muted-foreground"
+                    className="text-sm px-2.5 py-1 rounded-full border border-border text-muted-foreground"
                 >
                     {tech}
                 </span>
