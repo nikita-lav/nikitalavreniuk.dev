@@ -8,7 +8,7 @@ export const GENERAL_INFO = {
 
 export const SOCIAL_LINKS = [
   {name: 'github', url: 'https://github.com/nikita-lav'},
-  {name: 'linkedin', url: 'https://www.linkedin.com/in/nikita-lavreniuk-83bb98178'},
+  {name: 'linkedin', url: 'https://www.linkedin.com/in/nikita-lavreniuk'},
 ];
 
 export const MY_STACK = {
@@ -138,7 +138,7 @@ export const PROJECTS: IProject[] = [
         <li>Implemented Stripe subscription management with webhook processing for billing events and a self-serve customer portal</li>
       </ul>
       `,
-    techStack: ['Next.js', 'NestJS', 'PostgreSQL', 'Redis', 'TypeScript', 'BullMQ', 'Socket.IO', 'TikTok Shop API', 'Stripe', 'Recharts', 'AG-Grid', 'd3.js'],
+    techStack: ['Next.js', 'NestJS', 'PostgreSQL', 'Redis', 'TypeScript', 'BullMQ', 'Socket.IO', 'TikTok Shop API', 'Stripe', 'Recharts', 'd3.js'],
     thumbnail: '/projects/thumbnail/dashboardly.webp',
     longThumbnail: '/projects/long/dashboardly.webp',
     images: [
@@ -332,7 +332,7 @@ export const MY_EXPERIENCE: IExperience[] = [
       'Designed P&L, Cohort, and Sales dashboards for business decision-making',
       'Built NestJS backend with Prisma ORM and PostgreSQL for scalable data management',
     ],
-    techStack: ['Next.js', 'TypeScript', 'Node.js', 'NestJS', 'Prisma', 'PostgreSQL', 'Docker', 'AG-Grid', 'D3.js', 'Chart.js'],
+    techStack: ['Next.js', 'TypeScript', 'Node.js', 'NestJS', 'Prisma', 'PostgreSQL', 'Docker', 'D3.js', 'Chart.js'],
   },
   {
     title: 'Frontend Engineer',

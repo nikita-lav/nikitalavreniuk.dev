@@ -7,10 +7,6 @@ import Button from '@/components/Button';
 
 const MENU_LINKS = [
     {
-        name: 'Home',
-        url: '/',
-    },
-    {
         name: 'About Me',
         url: '/#about-me',
     },
@@ -173,6 +169,11 @@ const Navbar = () => {
                                     </li>
                                 ))}
                             </ul>
+                            <div className="mt-6">
+                                <Button as="link" variant="primary" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                                    Resume
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>
