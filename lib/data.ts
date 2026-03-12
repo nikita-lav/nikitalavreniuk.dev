@@ -19,7 +19,6 @@ export const MY_STACK = {
     {name: 'Vue.js', icon: '/logo/vue.svg'},
     {name: 'Next.js', icon: '/logo/next.png'},
     {name: 'Nuxt.js', icon: '/logo/nuxt.svg'},
-    {name: 'Angular', icon: '/logo/angular.svg'},
     {name: 'HTML5', icon: '/logo/html.svg'},
     {name: 'Tailwind CSS', icon: '/logo/tailwind.png'},
     {name: 'Sass', icon: '/logo/sass.png'},
@@ -132,14 +131,14 @@ export const PROJECTS: IProject[] = [
       <p>I was a core contributor on Dashboardly, owning full-cycle development of major features end-to-end — from architectural design to production delivery. The platform pulls large volumes of data from the TikTok Shop API and surfaces it as fast, accurate analytics for sellers managing thousands of orders.</p>
 
       <ul>
-        <li>Designed and implemented 5 feature-rich analytics modules: Sales &amp; Profit Dashboard, Profit &amp; Loss Analytics with multi-dimensional KPI comparison, Cohort Retention Analysis with heatmap visualisations, inventory management, and order management — built in Angular with NGXS state management</li>
+        <li>Designed and implemented 5 feature-rich analytics modules: Sales &amp; Profit Dashboard, Profit &amp; Loss Analytics with multi-dimensional KPI comparison, Cohort Retention Analysis with heatmap visualisations, inventory management, and order management — built in Next.js with React state management</li>
         <li>Developed Customer Purchase Journey flow analysis with conversion rate tracking and retention statistics, processing thousands of daily transaction records</li>
         <li>Built and optimised NestJS backend services — controllers, modules, database schemas, and Prisma migrations — improving query response times through strategic indexing</li>
         <li>Engineered a BullMQ queue system with 15+ processors for parallel async imports from the TikTok Shop API (products, orders, inventory, FBT, statements), integrated Socket.IO WebSockets for real-time live metrics</li>
         <li>Implemented Stripe subscription management with webhook processing for billing events and a self-serve customer portal</li>
       </ul>
       `,
-    techStack: ['Angular', 'NestJS', 'PostgreSQL', 'Redis', 'TypeScript', 'BullMQ', 'Socket.IO', 'TikTok Shop API', 'Stripe', 'ApexCharts', 'AG-Grid', 'd3.js'],
+    techStack: ['Next.js', 'NestJS', 'PostgreSQL', 'Redis', 'TypeScript', 'BullMQ', 'Socket.IO', 'TikTok Shop API', 'Stripe', 'Recharts', 'AG-Grid', 'd3.js'],
     thumbnail: '/projects/thumbnail/dashboardly.webp',
     longThumbnail: '/projects/long/dashboardly.webp',
     images: [
@@ -261,7 +260,7 @@ export const PROJECTS: IProject[] = [
         <li>Improved performance and accessibility scores across key pages</li>
       </ul>
       `,
-    techStack: ['Nuxt', 'TypeScript', 'Sass'],
+    techStack: ['Next.js', 'React', 'TypeScript', 'Sass'],
     thumbnail: '/projects/thumbnail/austen-blake.webp',
     longThumbnail: '/projects/long/austen-blake.webp',
     images: [
@@ -288,15 +287,15 @@ export const PROJECTS: IProject[] = [
       </ul>
       `,
     role: `
-      <p>I worked on the Exerfly platform as a Frontend Developer at Broxbe, building the training content experience on top of a Nuxt 2 and GraphQL stack.</p>
+      <p>I worked on the Exerfly platform as a Frontend Developer at Broxbe, building the training content experience on top of a Next.js and React stack.</p>
 
       <ul>
-        <li>Developed the platform frontend with Nuxt 2 and Vue.js, implementing page routing, layouts, and reusable components</li>
+        <li>Developed the platform frontend with Next.js and React, implementing page routing, layouts, and reusable components</li>
         <li>Integrated GraphQL API for fetching training content, exercise data, and user resources</li>
         <li>Built video training module pages with structured playback and supporting content</li>
       </ul>
       `,
-    techStack: ['Nuxt 2', 'Vue.js', 'GraphQL', 'JavaScript', 'Sass'],
+    techStack: ['Next.js', 'React', 'GraphQL', 'JavaScript', 'Sass'],
     thumbnail: '/projects/thumbnail/exarfly.webp',
     longThumbnail: '/projects/long/exarfly.webp',
     images: [
@@ -328,12 +327,12 @@ export const MY_EXPERIENCE: IExperience[] = [
     company: 'Dashboardly',
     duration: 'Jan 2025 – Oct 2025',
     description: [
-      'Sole developer of a SaaS TikTok analytics platform built with Angular and NestJS',
+      'Architected a SaaS TikTok analytics platform built with Next.js and NestJS',
       'Delivered 5 analytics modules covering creator performance, audience insights, and trend analysis',
       'Designed P&L, Cohort, and Sales dashboards for business decision-making',
       'Built NestJS backend with Prisma ORM and PostgreSQL for scalable data management',
     ],
-    techStack: ['Angular', 'TypeScript', 'Node.js', 'NestJS', 'Prisma', 'PostgreSQL', 'Docker', 'AG-Grid', 'D3.js', 'Chart.js'],
+    techStack: ['Next.js', 'TypeScript', 'Node.js', 'NestJS', 'Prisma', 'PostgreSQL', 'Docker', 'AG-Grid', 'D3.js', 'Chart.js'],
   },
   {
     title: 'Frontend Engineer',
@@ -380,11 +379,11 @@ export const MY_EXPERIENCE: IExperience[] = [
       {
         name: 'ASML',
         description: [
-          'Delivered a Vue 2 + Sitecore job search feature used by thousands of applicants',
+          'Delivered a Next.js job search feature used by thousands of applicants',
           'Refactored legacy components to reduce initial load time significantly',
           'Collaborated with stakeholders in demos and iterative feedback sessions',
         ],
-        techStack: ['Vue 2', 'Sitecore', 'JavaScript', 'Cypress', 'Jest'],
+        techStack: ['Next.js', 'React', 'JavaScript', 'Cypress', 'Jest'],
       },
       {
         name: 'Ericsson',
@@ -414,11 +413,11 @@ export const MY_EXPERIENCE: IExperience[] = [
     company: 'Broxbe',
     duration: 'May 2020 – Mar 2022',
     description: [
-      'Developed the Exerfly fitness platform with Nuxt 2, GraphQL, and video training modules',
+      'Developed the Exerfly fitness platform with Next.js, React, GraphQL, and video training modules',
       'Built Austin & Blake ring customisation tool with a recommendation algorithm',
       'Integrated Decap CMS for client-managed content across multiple projects',
     ],
-    techStack: ['Vue.js', 'Nuxt 2', 'GraphQL', 'Decap CMS'],
+    techStack: ['React', 'Next.js', 'GraphQL', 'Decap CMS'],
   },
   {
     title: 'Frontend Developer',

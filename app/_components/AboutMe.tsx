@@ -2,6 +2,7 @@
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/all';
+import Image from 'next/image';
 import React from 'react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -59,15 +60,17 @@ const AboutMe = () => {
           product that&apos;s fast, polished, and built to last.
         </h2>
 
-        <p className="pb-3 border-b text-muted-foreground slide-up-and-fade">
-          This is me.
-        </p>
-
         <div className="grid md:grid-cols-12 mt-9">
           <div className="md:col-span-5">
-            <p className="text-5xl slide-up-and-fade">
-              Hi, I&apos;m Nikita.
-            </p>
+            <div className="slide-up-and-fade">
+              <Image
+                src="/nikita.webp"
+                alt="Nikita Lavreniuk"
+                width={400}
+                height={500}
+                className="rounded-lg object-cover w-full max-w-[360px]"
+              />
+            </div>
           </div>
           <div className="md:col-span-7">
             <div className="text-lg text-muted-foreground max-w-[500px]">
