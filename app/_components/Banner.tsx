@@ -42,7 +42,7 @@ const Banner = () => {
             >
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start md:max-w-[700px] lg:max-w-[770px]">
                     <h1 className="banner-title slide-up-and-fade leading-[1.05] text-5xl sm:text-7xl lg:text-[90px] font-anton text-primary">
-                        Nikita Lavreniuk.
+                        Nikita Lavreniuk
                     </h1>
                     <h2 className="banner-subtitle slide-up-and-fade leading-[1.1] text-3xl sm:text-5xl lg:text-[52px] font-anton text-muted-foreground mt-4">
                         I build SaaS products, dashboards, AI features, and integrations.
