@@ -63,6 +63,68 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
   {
+    title: 'SotaProxy',
+    slug: 'sotaproxy',
+    liveUrl: 'https://sotaproxy.com/',
+    description: `
+      A pay-as-you-go proxy platform that resells mobile, residential, and datacenter (IPv4/IPv6/ISP) proxies bought wholesale from upstream vendors, marked up, and sold on a prepaid crypto-balance model. Customers buy and manage proxies through a web dashboard, a versioned public wholesale API, or an MCP server that lets Claude purchase and operate proxies in natural language. The product spans four independent apps — a hexagonal Fastify backend, a React 19 customer dashboard, a separate React 19 admin panel, and a Next.js 16 marketing/SEO site — all backed by Supabase Postgres with GoTrue auth and row-level security.
+      `,
+    keyFeatures: `
+      <ul>
+        <li>Buy and renew 8 proxy types sourced from three upstream vendors</li>
+        <li><strong>Prepaid wallet</strong> with a full transaction ledger, crypto top-ups, and refund-on-failure</li>
+        <li>Idempotent quote → create → provision → renew order lifecycle</li>
+        <li>Versioned public wholesale API with scoped, hashed API keys</li>
+        <li><strong>MCP server exposing 19 tools</strong> — Claude can purchase and operate proxies in natural language</li>
+        <li>Reseller sub-accounts plus referral and affiliate programmes</li>
+        <li>Mobile-proxy control — rotation, reboot, fingerprint, and carrier selection</li>
+        <li>Claude-auto-translated blog across 4 languages and 320 programmatic-SEO pages</li>
+        <li>Full admin P&amp;L control plane with per-vendor kill-switches</li>
+        <li>TOTP two-factor authentication and Google OAuth</li>
+      </ul>
+      `,
+    role: `
+      <p>I built SotaProxy end to end — architecture, backend, both frontends, the marketing site, and production infrastructure. The core challenge was safe, fully automated proxy sales across multiple vendors while real money moves through every single order.</p>
+
+      <ul>
+        <li>Architected a hexagonal Fastify backend — 280+ routes and 100+ use-cases behind 4 ports isolating the domain from vendors, storage, and transport</li>
+        <li>Built money-safe commerce on atomic row-locked PostgreSQL RPCs with debit-before-provision, so a failed provision refunds instead of silently charging</li>
+        <li>Integrated 3 proxy vendors and 2 crypto payment gateways behind a unified catalog, under strict supplier anonymity</li>
+        <li>Engineered a 14-job cron scheduler with balance kill-switches that halt purchasing before upstream credit runs dry</li>
+        <li>Shipped the Next.js 16 SEO site with a Claude-translated blog and on-demand ISR revalidation</li>
+      </ul>
+      `,
+    techStack: [
+      'Fastify',
+      'React 19',
+      'PostgreSQL',
+      'TypeScript',
+      'Next.js 16',
+      'Supabase',
+      'Vite',
+      'TanStack Query',
+      'Tailwind CSS',
+      'Zod',
+      'MCP',
+      'Claude API',
+      'Caddy',
+      'Railway',
+      'Cloudflare',
+    ],
+    thumbnail: '/projects/thumbnail/sotaproxy.webp',
+    longThumbnail: '/projects/long/sotaproxy.webp',
+    images: [
+      '/projects/images/sotaproxy-1.webp',
+      '/projects/images/sotaproxy-2.webp',
+      '/projects/images/sotaproxy-3.webp',
+      '/projects/images/sotaproxy-4.webp',
+      '/projects/images/sotaproxy-5.webp',
+      '/projects/images/sotaproxy-6.webp',
+      '/projects/images/sotaproxy-7.webp',
+      '/projects/images/sotaproxy-8.webp',
+    ],
+  },
+  {
     title: 'YourPath',
     slug: 'yourpath',
     liveUrl: 'https://www.yourpath.care/',
@@ -309,6 +371,79 @@ export const PROJECTS: IProject[] = [
 ];
 
 export const MY_EXPERIENCE: IExperience[] = [
+  {
+    title: 'Senior Full-Stack Developer',
+    company: 'AI Workforce-Readiness Platform',
+    duration: 'May 2026 – Jun 2026',
+    description: [
+      'Built an AI workforce-readiness SaaS end to end as the sole developer on Next.js 16 and Prisma',
+      'Architected a multi-stage Claude analysis engine with schema-constrained output and a self-correcting re-prompt loop',
+      'Built a deterministic scoring layer — pure functions, no LLM — for byte-identical results on identical inputs',
+      'Implemented a three-layer PII boundary with a local NER model, so no personal data ever reached the LLM',
+      'Added a human approval gate with per-field audit trail, AES-256-GCM encryption at rest, and append-only logs',
+      'Covered the platform with ~700 unit tests and ~117 Playwright end-to-end tests',
+    ],
+    techStack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Prisma',
+      'PostgreSQL',
+      'Anthropic Claude',
+      'Zod',
+      'Playwright',
+      'Docker',
+      'Google Cloud Run',
+    ],
+  },
+  {
+    title: 'Senior Full-Stack Developer',
+    company: 'AI Sales Agent (Telehealth)',
+    duration: 'Apr 2026 – May 2026',
+    description: [
+      'Built an omnichannel AI sales agent reaching leads over SMS, email, and voice within 5 minutes of form abandonment',
+      'Architected a distributed Google Cloud backend — Sequencer, Adapter, and Worker services over Pub/Sub',
+      'Kept a PostgreSQL database in sync with GoHighLevel for lead pipeline state and conversation history',
+      'Integrated OpenAI GPT for conversation logic, intent extraction, and a 5-step price objection playbook',
+      'Wired up Vapi outbound voice calls with warm transfer to human agents on escalation',
+      'Engineered medical-compliance guardrails routing clinical questions to dermatologist review',
+    ],
+    techStack: [
+      'Node.js',
+      'Google Cloud',
+      'Pub/Sub',
+      'PostgreSQL',
+      'OpenAI GPT',
+      'OpenRouter',
+      'Vapi',
+      'Twilio',
+      'GoHighLevel API',
+      'Sentry',
+    ],
+  },
+  {
+    title: 'Senior Full-Stack Developer',
+    company: 'SotaProxy',
+    duration: 'Mar 2026 – Apr 2026',
+    description: [
+      'Built a SaaS proxy marketplace across a four-package monorepo — landing, dashboard, admin panel, and Fastify API',
+      'Designed the backend along DDD lines with 10+ versioned migrations and Supabase row-level security policies',
+      'Integrated two upstream proxy providers behind a unified catalog with scheduled inventory sync',
+      'Integrated the AnyMoney crypto gateway with HMAC-SHA512 signing, constant-time verification, and replay protection',
+      'Built usage-based PAYG billing with markup, auto-renewal, partial refunds, and a referral payout programme',
+      'Shipped a multilingual blog (EN/RU/UK/ES) with per-language slugs and graceful English fallback',
+    ],
+    techStack: [
+      'Next.js',
+      'React',
+      'Fastify',
+      'TypeScript',
+      'Zod',
+      'Supabase',
+      'PostgreSQL',
+      'AnyMoney',
+    ],
+  },
   {
     title: 'Senior Full-Stack Developer',
     company: 'Mainflow',
