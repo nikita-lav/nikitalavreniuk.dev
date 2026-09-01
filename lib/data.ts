@@ -377,7 +377,7 @@ export const MY_EXPERIENCE: IExperience[] = [
     techStack: [],
     clients: [
       {
-        name: 'AI Workforce-Readiness Platform · May–Jul 2026',
+        name: 'AI Workforce-Readiness Platform · May – Jul 2026',
         description: [
           'Sole developer, end to end — an AI workforce-readiness SaaS on Next.js 16 (App Router, React 19), Prisma/PostgreSQL, deployed to Google Cloud Run',
           'Architected a multi-stage Claude analysis engine with JSON-schema-constrained output, Zod validation, and a self-correcting re-prompt loop',
@@ -399,7 +399,7 @@ export const MY_EXPERIENCE: IExperience[] = [
         ],
       },
       {
-        name: 'AI Sales Agent — Telehealth · Apr–Jun 2026',
+        name: 'AI Sales Agent — Telehealth · Apr – Jun 2026',
         description: [
           'Built an omnichannel AI sales agent reaching leads over SMS, email, and voice within 5 minutes of form abandonment',
           'Architected a distributed Google Cloud backend — Sequencer, Adapter, and Worker services over Pub/Sub',
@@ -421,7 +421,7 @@ export const MY_EXPERIENCE: IExperience[] = [
         ],
       },
       {
-        name: 'SotaProxy · Feb–Apr 2026',
+        name: 'SotaProxy · Feb – Apr 2026',
         description: [
           'Built a SaaS proxy marketplace across a four-package monorepo — landing, dashboard, admin panel, and Fastify API',
           'Designed the backend along DDD lines with 10+ versioned migrations and Supabase row-level security',
